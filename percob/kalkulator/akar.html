@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="style(akar).css">
+</head>
+<body>
+<div id="container">
+	<div id="menu">
+		<div class="basic">
+			<a href="basic.html">Basic</a>
+		</div>
+		<div id="lane_menu"></div>
+		<div class="pangkat">
+			<a href="pangkat.HTML">Pangkat</a>
+		</div>
+		<div id="lane_menu"></div>
+		<div class="logaritma">
+			<a href="logaritma.html">Logaritma</a>
+		</div>
+		<div id="lane_menu"></div>
+		<div class="akar">
+			<a href="akar.html">Akar</a>
+		</div>
+		<div id="lane_menu"></div>
+		<div id="close">
+			<center><img src="img/close.png" onclick="close_menu()"></center>
+		</div>
+		<div id="versi">
+			<center>Beta.008</center>
+		</div>
+	</div>
+	<div id="judul"><h1 align="center">Kalkulator Akar</h1></div>
+	<div id="lane_navigasi">
+		<div id="lane"></div>
+		<div id="navigasi"><img src="img/menu.png" onclick="open_menu()"></div>
+	</div>
+	<div id="main">
+		<div id="input_font_input">
+			<input id="data1" type="text" name="">
+			<img id="root" src="img/root.png">
+			<input id="data2" type="text" name="">
+		</div>
+		<div id="button">
+			<center><button id="button_hasil" onclick="root()">Hasil</button></center>
+		</div>
+		<div id="hasil">
+			<p></p>
+		</div>
+		<center><button id="reset" onclick="reset()">Reset</button></center>
+	</div>
+	<div id="lane_copy">
+		<div id="lane"></div>
+		<footer id="copy">Copyright &copy; IndraRusyana</footer>
+	</div>
+<script type="text/javascript">
+	var MyInput = document.getElementsByTagName("input");
+	MyInput.addEventListener('keyup', function() {
+  		if (event.keyCode === 13) {
+   			event.preventDefault();
+   			document.getElementById("button_hasil").click();
+  		}
+	});
+
+
+	function open_menu() {
+		var menu1 = document.getElementById('menu');
+		var navigasi1 = document.getElementById('navigasi');
+		menu1.style.display = 'block';
+		navigasi1.style.display = 'none';
+	}
+
+	function close_menu() {
+		var menu1 = document.getElementById('menu');
+		var navigasi1 = document.getElementById('navigasi');
+		menu1.style.display = 'none';
+		navigasi1.style.display = 'block';
+		
+	}
+
+	function reset() {
+		var input1 = document.getElementById('data1').value = '';
+		var input2 = document.getElementById('data2').value = '';
+
+		const hasil1 = document.getElementById('hasil');
+		const hasil_p = hasil1.querySelector('p');
+		const pbaru = document.createElement('p');
+		const textpbaru = document.createTextNode('');
+
+		pbaru.appendChild(textpbaru);
+		hasil1.replaceChild(pbaru, hasil_p);
+	}	
+
+	function root() {
+		var input1 = document.getElementById('data1').value;
+		var input2 = document.getElementById('data2').value;
+		
+		akar(input1, input2);
+
+		document.querySelector('p').innerHTML = akar(input1, input2);
+	}
+
+
+	function akar(x, y) {
+		return  Math.pow(y, 1/x) ;
+	}
+
+</script>
+
+</div>
+</body>
+</html>

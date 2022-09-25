@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		
+		function save() {
+			var input1 = document.getElementById('data1').value;
+			var input2 = document.getElementById('data2').value;
+			
+			tambah(input1, input2);
+
+			document.getElementById('hasil').innerHTML = tambah(input1, input2);
+		}
+
+		function tambah(x, y) {
+			return parseInt(x) + parseInt(y) ;
+		}
+
+	</script>
+</head>
+<body>
+
+	<input id="data1" type="text" name="">
+<br><input id="data2" type="text" name="">
+	<button onclick="save()">Tambah</button>
+	<br>Hasil : <span id="hasil"></span>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: lightblue;
+	font-family: arial;
+	font-size: 30px;
+	color: black;
+}
+
+#container{
+	width: 250px;
+	height: 200px;
+	margin: 50px auto;
+	border: 2px solid black;
+}
+
+.slider{
+	width: 1030px;
+	display: inline-block;
+	position: relative;
+/*	right: 258px;*/
+/*	right: 517px;*/
+/*	right: 775px;*/
+
+}
+
+.slider img{
+	width: 250px;
+	height: 200px;
+}
+
+.img1{
+}
+
+.img2{
+
+}
+
+.img3{
+
+}
+
+.img4{
+
+}
+
+#navigasi{
+	background-color: white;
+	border-radius: 8px;
+	width: 60px;
+	margin: 0 auto;
+}
+
+.left{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+

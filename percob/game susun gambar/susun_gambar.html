@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Susun Gambar</title>
+	
+	<style type="text/css">
+		
+		body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		#judul{
+			color: blue;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+
+		#judul h1{
+			margin: auto;
+		}
+
+		#Box{
+			width: 466px;
+			height: 466px;
+			margin: auto;
+			background: black;
+		}
+
+		#satu{
+			background: black;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#satu img, #dua img, #tiga img, #empat img, #lima img, #enam img, #tujuh img, #delapan img{
+			width: 100%;
+			height: 100%;
+		}
+
+		#dua{
+			background: yellow;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#tiga{
+			background: aqua;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#empat{
+			background: aqua;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#lima{
+			background: aqua;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#enam{
+			background: aqua;
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#tujuh{
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#delapan{
+			width: 150px;
+			height: 150px;
+			display:block;
+			position:relative;
+			float:left;
+			margin-left: 4px;
+			margin-top: 4px;
+		}
+
+		#arrow{
+			display: none;
+			position: relative;
+			float: right;
+			opacity: 0.7;
+		}
+		#delapan:hover #arrow{
+			display: block;
+		}
+
+		#random{
+			width: 50px;
+			height: 20px;
+			background: red;
+		}
+		#reset{
+			width: 50px;
+			height: 20px;
+			background: aqua;
+		}
+
+		/***Action 1***/
+
+		.move1Act1{left: 308px;}.move3Act1{right: 308px;}
+
+		/***Action 2***/
+
+		.move1Act2{left: 154px;}.move2Act2{right: 154px;}
+
+		/***Action 3***/
+
+		.move2Act3{left: 154px;}.move3Act3{right: 154px;}
+
+		/***Action 4***/
+
+		.move4Act4{left: 154px;}.move5Act4{right: 154px;}
+
+		/***Action 5***/
+
+		.move5Act5{left: 154px;}.move6Act5{right: 154px;}
+
+		/***Action 6***/
+
+		.move4Act6{left: 308px;}.move6Act6{right: 308px;}
+
+		/***Action 87***/
+
+		.move7Act7{left: 154px;}.move8Act7{right: 154px;}
+
+		/***Action 8***/
+
+		.move7Act8{left: 308px;}.move8Act8{right: 154px;}
+
+
+	</style>
+
+</head>
+<body>
+	<div id="judul">
+		<h1><center>Game Susun Gambar</center></h1>
+	</div>
+	<div id="Box">
+		<div id="satu" class="# *">
+			<img src="images/layer 1.png">
+		</div>
+		<div id="dua" class="# *">
+			<img src="images/layer 2.png">
+		</div>
+		<div id="tiga" class="# *">
+			<img src="images/layer 3.png">
+		</div>
+		<div id="empat" class="# *">
+			<img src="images/layer 4.png">
+		</div>
+		<div id="lima" class="# *">
+			<img src="images/layer 5.png">
+		</div>
+		<div id="enam" class="# *">
+			<img src="images/layer 6.png">
+		</div>
+		<div id="tujuh" class="# *">
+			<img src="images/layer 7.png">
+		</div>
+		<div id="delapan" class="# *">
+			<img src="images/layer 8.png">
+		</div>
+		
+		
+	</div>
+
+	<div id="random" onclick="Random()"><p>d</p></div>
+	<div id="reset" onclick="Reset()"><p>Reset</p></div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
